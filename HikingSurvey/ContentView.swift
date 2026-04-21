@@ -11,7 +11,9 @@ struct ContentView: View {
                 .padding(.top, 24)
         }
         .onAppear {
-
+            for response in Response.sampleResponses {
+                responses.insert(Response(text: response), at: 0)
+            }
         }
         .padding()
     }
