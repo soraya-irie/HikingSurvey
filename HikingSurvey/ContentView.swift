@@ -9,6 +9,9 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity)
                 .font(.title)
                 .padding(.top, 24)
+            ScrollView {
+
+            }
         }
         .onAppear {
             for response in Response.sampleResponses {
