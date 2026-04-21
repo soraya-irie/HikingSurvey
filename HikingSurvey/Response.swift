@@ -1,6 +1,7 @@
 import Foundation
 
-struct Response {
+struct Response: Identifiable {
+    var id = UUID()
     var text: String
 
     static let sampleResponses: [String] = [
