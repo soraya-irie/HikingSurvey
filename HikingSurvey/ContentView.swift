@@ -10,6 +10,9 @@ struct ContentView: View {
                 .font(.title)
                 .padding(.top, 24)
         }
+        .onAppear {
+
+        }
         .padding()
     }
 }
