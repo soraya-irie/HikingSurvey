@@ -4,4 +4,8 @@ enum Sentiment {
     case positive
     case negative
     case moderate
+
+    init(_ score: Double) {
+
+    }
 }
