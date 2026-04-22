@@ -18,6 +18,8 @@ struct ChartView: View {
             Sentiment.negative : Sentiment.negative.sentimentColor,
             Sentiment.moderate : Sentiment.moderate.sentimentColor
         ])
+        .frame(height: 200)
+        .padding()
     }
 }
 
