@@ -22,8 +22,9 @@ struct ContentView: View {
                     ResponseView(response: response)
                 }
             }
-            TextField("What do you think abount hiking?", text: $responseText)
+            TextField("What do you think abount hiking?", text: $responseText, axis: .vertical)
                 .textFieldStyle(.roundedBorder)
+                .lineLimit(5)
         }
         .onAppear {
             for response in Response.sampleResponses {
