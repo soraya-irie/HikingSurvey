@@ -27,6 +27,7 @@ struct ContentView: View {
                     .textFieldStyle(.roundedBorder)
                     .lineLimit(5)
                 Button("Done") {
+                    guard !responseText.isEmpty else { return }
                     saveResponse(text: responseText)
                 }
             }
