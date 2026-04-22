@@ -29,6 +29,7 @@ struct ContentView: View {
                 Button("Done") {
                     guard !responseText.isEmpty else { return }
                     saveResponse(text: responseText)
+                    responseText = ""
                 }
             }
         }
