@@ -6,15 +6,16 @@ struct ResponseView: View {
     var body: some View {
         HStack {
             Text(response.text)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(16)
-                .background(RoundedRectangle(cornerRadius: 8)
-                    .fill(.white)
-                )
+                .padding(.trailing)
             Spacer()
             Image(systemName: response.sentiment.icon)
                 .frame(width: 30, height: 30)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .background(RoundedRectangle(cornerRadius: 8)
+            .fill(.white)
+        )
     }
 }
 
