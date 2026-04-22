@@ -31,6 +31,7 @@ struct ContentView: View {
                     guard !responseText.isEmpty else { return }
                     saveResponse(text: responseText)
                     responseText = ""
+                    textFieldIsFocused = false
                 }
             }
         }
