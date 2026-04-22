@@ -21,7 +21,9 @@ struct ChartView: View {
         .chartBackground { chartProxy in
             GeometryReader { geometry in
                 if let anchor = chartProxy.plotFrame {
-
+                    let frame = geometry[anchor]
+                    Image(systemName: "figure.hiking")
+                        .position(x: frame.midX, y: frame.midY)
                 }
             }
         }
