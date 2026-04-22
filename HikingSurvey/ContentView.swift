@@ -20,7 +20,8 @@ struct ContentView: View {
                 responses.insert(Response(text: response), at: 0)
             }
         }
-        .padding()
+        .padding(.horizontal)
+        .background(Color(white: 0.94))
     }
 }
 
