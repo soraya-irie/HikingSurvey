@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var responses: [Response] = []
+    var score = Scorer()
 
     var body: some View {
         VStack {
