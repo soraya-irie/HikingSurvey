@@ -5,7 +5,8 @@ struct ContentView: View {
     var score = Scorer()
 
     func saveResponse(text: String) {
-
+        let score = score.score(text)
+        let response = Response(text: text, score: score)
     }
 
     var body: some View {
