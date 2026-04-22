@@ -14,4 +14,8 @@ enum Sentiment {
             self = .moderate
         }
     }
+
+    var icon: String {
+
+    }
 }
