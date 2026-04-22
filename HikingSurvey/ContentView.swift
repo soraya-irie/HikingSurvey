@@ -22,6 +22,8 @@ struct ContentView: View {
                     ResponseView(response: response)
                 }
             }
+            TextField("What do you think abount hiking?", text: $responseText)
+                .textFieldStyle(.roundedBorder)
         }
         .onAppear {
             for response in Response.sampleResponses {
