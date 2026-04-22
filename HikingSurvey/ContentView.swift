@@ -4,6 +4,10 @@ struct ContentView: View {
     @State var responses: [Response] = []
     var score = Scorer()
 
+    func saveResponse(text: String) {
+
+    }
+
     var body: some View {
         VStack {
             Text("Opinions on Hiking")
