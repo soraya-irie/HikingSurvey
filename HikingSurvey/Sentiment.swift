@@ -6,6 +6,12 @@ enum Sentiment {
     case moderate
 
     init(_ score: Double) {
-
+        if score > 0.2 {
+            self = .positive
+        } else if score < -0.2 {
+            self = .negative
+        } else {
+            self = .moderate
+        }
     }
 }
