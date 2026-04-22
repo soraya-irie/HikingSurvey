@@ -22,9 +22,14 @@ struct ContentView: View {
                     ResponseView(response: response)
                 }
             }
-            TextField("What do you think abount hiking?", text: $responseText, axis: .vertical)
-                .textFieldStyle(.roundedBorder)
-                .lineLimit(5)
+            HStack {
+                TextField("What do you think abount hiking?", text: $responseText, axis: .vertical)
+                    .textFieldStyle(.roundedBorder)
+                    .lineLimit(5)
+                Button("Done") {
+
+                }
+            }
         }
         .onAppear {
             for response in Response.sampleResponses {
