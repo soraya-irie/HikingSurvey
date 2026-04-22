@@ -33,7 +33,9 @@ struct ContentView: View {
                     responseText = ""
                     textFieldIsFocused = false
                 }
+                .padding(.horizontal, 4)
             }
+            .padding(.bottom, 8)
         }
         .onAppear {
             for response in Response.sampleResponses {
