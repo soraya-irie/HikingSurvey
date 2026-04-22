@@ -10,7 +10,8 @@ struct ResponseView: View {
             .background(RoundedRectangle(cornerRadius: 8)
                 .fill(.white)
             )
-        Text(response.score, format: .number.rounded(increment: 0.1))
+        Image(systemName: response.sentiment.icon)
+            .frame(width: 30, height: 30)
     }
 }
 
