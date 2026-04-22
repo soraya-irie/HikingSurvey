@@ -22,7 +22,7 @@ struct ContentView: View {
         }
         .onAppear {
             for response in Response.sampleResponses {
-                responses.insert(Response(text: response), at: 0)
+                saveResponse(text: response)
             }
         }
         .padding(.horizontal)
