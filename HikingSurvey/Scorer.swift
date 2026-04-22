@@ -10,7 +10,12 @@ class Scorer {
             in: text.startIndex..<text.endIndex,
             unit: .paragraph,
             scheme: .sentimentScore,
-            options: []) { _, _ in
+            options: []) { sentimentTag, _ in
+                if let sentimentString = sentimentTag?.rawValue,
+                   let score = Double(sentimentString) {
+
+                }
+
                 return false
             }
     }
