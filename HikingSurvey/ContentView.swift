@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var responses: [Response] = []
+    @State private var responseText = ""
     var score = Scorer()
 
     func saveResponse(text: String) {
