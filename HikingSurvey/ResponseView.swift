@@ -4,14 +4,17 @@ struct ResponseView: View {
     var response: Response
 
     var body: some View {
-        Text(response.text)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(16)
-            .background(RoundedRectangle(cornerRadius: 8)
-                .fill(.white)
-            )
-        Image(systemName: response.sentiment.icon)
-            .frame(width: 30, height: 30)
+        HStack {
+            Text(response.text)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(16)
+                .background(RoundedRectangle(cornerRadius: 8)
+                    .fill(.white)
+                )
+            Spacer()
+            Image(systemName: response.sentiment.icon)
+                .frame(width: 30, height: 30)
+        }
     }
 }
 
