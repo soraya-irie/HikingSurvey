@@ -20,7 +20,9 @@ struct ChartView: View {
         ])
         .chartBackground { chartProxy in
             GeometryReader { geometry in
+                if let anchor = chartProxy.plotFrame {
 
+                }
             }
         }
         .chartLegend(position: .trailing, alignment: .center)
