@@ -6,7 +6,7 @@ struct ChartView: View {
 
     var body: some View {
         Chart(responses) { response in
-            SectorMark(angle: .value("Type", 1), angularInset: 2)
+            SectorMark(angle: .value("Type", 1))
         }
     }
 }
