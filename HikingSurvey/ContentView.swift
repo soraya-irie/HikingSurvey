@@ -10,7 +10,9 @@ struct ContentView: View {
                 .font(.title)
                 .padding(.top, 24)
             ScrollView {
-
+                ForEach(responses) { response in
+                    Text(response.text)
+                }
             }
         }
         .onAppear {
