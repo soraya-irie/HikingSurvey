@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @FocusState private var textFieldIsFocused: Bool
     @State var responses: [Response] = []
     @State private var responseText = ""
     var score = Scorer()
