@@ -19,7 +19,9 @@ struct ChartView: View {
             Sentiment.moderate : Sentiment.moderate.sentimentColor
         ])
         .chartBackground { chartProxy in
-            Image(systemName: "figure.hiking")
+            GeometryReader { geometry in
+
+            }
         }
         .chartLegend(position: .trailing, alignment: .center)
         .frame(height: 200)
