@@ -7,6 +7,7 @@ struct ContentView: View {
     func saveResponse(text: String) {
         let score = score.score(text)
         let response = Response(text: text, score: score)
+        responses.insert(response, at: 0)
     }
 
     var body: some View {
