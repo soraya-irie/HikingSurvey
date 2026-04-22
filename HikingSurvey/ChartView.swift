@@ -18,6 +18,7 @@ struct ChartView: View {
             Sentiment.negative : Sentiment.negative.sentimentColor,
             Sentiment.moderate : Sentiment.moderate.sentimentColor
         ])
+        .chartLegend(position: .trailing, alignment: .center)
         .frame(height: 200)
         .padding()
     }
